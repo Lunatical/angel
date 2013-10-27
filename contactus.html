@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="sub_pages.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	</head>
+<body>
+	<div class="content" style="margin-top:0px">
+		<div id="header" style="background-image: url('')" > <!-- url('') 에 '' 안에 배경이미지 제작하신거 넣어주세요 .  -->
+			<div class="logo"></div>
+		
+			<div align="center" class="mailForm">
+				<form action="mailform.php" style="text-align: left;" id="myForm" name="emailForm" onsubmit="return check();"> 
+				<h1>CONTACT US</h1>			
+					<fieldset id="user-details">	
+						<label for="name"><span style="color: red">* </span>제 목</label>
+						<input type="text" name="name" value="" /> 
+					
+						<label for="email"><span style="color: red">* </span>답변 받으실 이메일</label> 
+						<input type="email" name="email" value=""  /> 
+					
+						<label for="phone">연락처</label> 
+						<input type="text" name="phone" value=""  /> 
+					
+						<label for="website">웹페이지</label> 
+						<input type="text" name="website" value=""  /> 
+					
+					</fieldset><!--end user-details-->
+					
+					<fieldset id="user-message">
+						<label for="message"><span style="color: red">* </span>내 용</label><br> 
+						<textarea name="message" class="textarea" ></textarea> 
+					
+						<input type="submit" value="문 의 하 기" name="submit" class="submit"/>		
+					</fieldset><!-- end user-message -->
+				</form>	
+			 </div>
+		</div>
+	</div>
+	<div id="bottom">
+		<div class="copy">
+			<img src="images/copyright.png"> copyright
+		</div>
+	</div>
+</body>
+</html>

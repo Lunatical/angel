@@ -1,0 +1,30 @@
+*{border: none!important}
+body { margin: 0 }
+
+.u{ background-color: #aaa; } 
+.item{text-align: center;}
+.carousel-control .icon-prev, .carousel-control .icon-next {	font-size: 100px; }
+#menu li { margin-top: 15px; list-style-type: none; float: left; width: 105px}
+
+#index { width:100%;}
+	.logo { width:146px; height: 151px; margin-left: 20px; padding-top: 0px; background: url("images/logo.png"); background-repeat: no-repeat; background-position: bottom; position: relative; }
+
+#top{ width:100%; height:100px; position: absolute; top: 0; z-index:999  }
+#menu{ margin: 0 auto; width: 974px; height: 33px; padding-top: 70px;  background: url("images/menu.png"); background-repeat: no-repeat; background-position: bottom; }
+	.menu {
+		margin: 0 auto;
+		width: 980px;
+		list-style-type: none;
+		padding-left: 0px;
+	}
+	.body { text-align: center; padding-top:20px;}
+	.content{ }
+
+#bottom{
+	text-align: center;
+	height:20%;
+}
+	.copy{
+		font-size: 8pt;
+		padding-top: 20px;
+	}

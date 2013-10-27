@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	</head>
+	<body>
+			<div id="top">
+				<div id="menu">
+					<ul class="menu">
+						<li class="menu_1">
+							
+						</li>
+						<li class="menu_1">
+							
+						</li>
+						<li class="menu_1">
+							
+						</li>
+						<li class="menu_1">
+							
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content">
+				<div id="carousel-example-generic" class="carousel slide carsize">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active u"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1" class="u" ></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2" class="u" ></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="3" class="u" ></li>
+				  </ol>
+
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner">
+				    <div class="item active">
+				    	<img src="images/image7.png" class="item_image">
+				      <div class="carousel-caption">
+				      </div>
+				    </div>
+				    <div class="item">
+				    	<img src="images/image9.jpg" class="item_image">
+				      <div class="carousel-caption">
+				      </div>
+				    </div>
+				    <div class="item">
+				    	<img src="images/image10.jpg" class="item_image">
+				      <div class="carousel-caption">
+				      </div>
+				    </div>
+
+				    <div class="item">
+				    	<a href="#event_page"><img src="images/image11.jpg" class="item_image"></a>
+				      <div class="carousel-caption">
+				      </div>
+				    </div>
+
+				  </div>
+
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" style="background:none" data-slide="prev">
+				    <span class="icon-prev" style="font-size: 120px; margin-top:-70px"></span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" style="background:none" data-slide="next">
+				    <span class="icon-next" style="font-size: 120px; margin-top:-70px"></span>
+				  </a>
+				</div>
+			</div>
+		</div>
+
+		<div id="bottom">
+			<div class="copy">
+				<img src="images/copyright.png"> copyright
+			</div>
+		</div>
+	</body>
+</html>
+
+
+<script type="text/javascript">
+$(document).ready(function(e){
+	document.write(screen.width);
+})
+$('.carousel').carousel({
+  interval: 10000
+})
+
+$(document).ready(function(e){
+	$(".carsize").css("height",window.innerHeight)
+	$(".item_image").css("height",window.innerHeight)
+	$(".item_image").css("width",window.innerWidth)
+	function sizing(e){
+	$(".carsize").css("height",window.innerHeight)
+	$(".item_image").css("height",window.innerHeight)
+	$(".item_image").css("width",window.innerWidth)
+	}
+	setInterval(sizing, 1000);
+	
+})
+
+
+</script>
