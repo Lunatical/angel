@@ -83,12 +83,43 @@
 
 
 <script type="text/javascript">
-$(document).ready(function(e){
-	document.write(screen.width);
-})
 $('.carousel').carousel({
   interval: 10000
 })
+
+$(document).ready(function(e){
+	screen_width = screen.width;
+	screen_height = screen.height;
+	
+	image_change = false
+	
+	if(screen_width / 4 == screen_height / 3 ){ // 4:3
+		img = $(".item_image").attr("src");
+		$(".item_image").attr("src", img+"_high")
+		image_change = true
+	}
+	if(screen_width / 5 == screen_height / 4){ // 5:4
+		img = $(".item_image").attr("src");
+		$(".item_image").attr("src", img+"_high")
+		image_change = true
+	}
+	if(screen_width / 16 == screen_height / 9){ // 16:9
+		img = $(".item_image").attr("src");
+		$(".item_image").attr("src", img+"_wide")
+		image_change = true
+	}
+	if(screen_width / 16 == screen_height / 10){ // 16:10
+		img = $(".item_image").attr("src");
+		$(".item_image").attr("src", img+"_wide")
+		image_change = true
+	}
+	if( image_change == false ){ // other
+		img = $(".item_image").attr("src");
+		$(".item_image").attr("src", img+"_wide")
+		image_change = true
+	}
+})
+
 
 $(document).ready(function(e){
 	$(".carsize").css("height",window.innerHeight)
